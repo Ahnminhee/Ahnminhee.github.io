@@ -1,7 +1,3 @@
-| title                    | date       | tags   | categories |
-| ------------------------ | ---------- | ------ | ---------- |
-| RxJava - Observable이란? | 2021-02-27 | RxJava | RxJava     |
-
 ### Observable
 
 Observable은 옵서버 패턴을 구현한다. 
