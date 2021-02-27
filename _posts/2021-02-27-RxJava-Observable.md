@@ -85,7 +85,7 @@ unsubscribe은 연산자 체인을 통해 옵저버가 구독하고 있던 Obser
 
 Observable과 Observer는 연속된 이벤트를 처리하는데 있어서는 싱글 콜백보다 효과적인 방법을 제공한다. 연산자들은 Observable이 배출하는 연속된 항목들을 변환시키고, 결합하고, 조작하는 기능을 제공한다. 또한 비동기 시스템이 가진 중첩된 콜백 핸들러의 단점을 제거했다.
 
-여러 연산자들은 [ReactiveX 공식 홈페이지] (http://reactivex.io/documentation/ko/observable.html) 에서 확인할 수 있다.
+여러 연산자들은 ReactiveX 공식 홈페이지에서 확인할 수 있다.
 
 
 
