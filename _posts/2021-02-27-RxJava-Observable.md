@@ -29,19 +29,6 @@ Observable은 옵서버 패턴을 구현한다.
 3. 구독을 통해 Observer를 Observable 객체에 연결 시킨다.(동시에 Observable의 동작 초기화)
 4. 메서드 호출로 결과가 리턴될 때마다 Observer의 메서드는 리턴 값 또는 Observable이 배출하는 항목들을 사용해서 연산을 시작한다.
 
-코드 구현
-
-```
-// 옵저버의 onNext 핸들러를 정의한다, 하지만 실행하지는 않는다
-// (이 예제에서는, 단순히 옵저버에 onNext 핸들러만 구현한다)
-def myOnNext = { it -> /* 필요한 연산을 처리한다 */ };
-// Observable을 정의하지만, 역시 실행하지는 않는다
-def myObservable = someObservable(itsParameters);
-// 옵저버가 Observable을 구독한다. 그리고 Observable을 실행한다
-myObservable.subscribe(myOnNext);
-// 필요한 코드를 구현한다
-```
-
 
 
 #### Observable 알림
