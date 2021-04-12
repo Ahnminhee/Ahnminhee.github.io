@@ -20,7 +20,7 @@ RxJava에서 제공하는 Subject 클래스에는 AsyncSubject, BehaviorSubject,
 
 AsyncSubject 클래스는 Observable에서 발행한 마지막 데이터를 얻어올 수 있는 Subject 클래스이다. 완료되기 전 마지막 데이터에만 관심이 있으며 이전 데이터는 무시한다.
 
-![AsyncSubject](/Users/anminhee/Desktop/AsyncSubject.png)
+<img width="785" alt="AsyncSubject" src="https://user-images.githubusercontent.com/48676762/114408552-7b650980-9be4-11eb-87ef-2ba81199d6c6.png">
 
 AsyncSubject 클래스는 지금까지와 다르게 마블 다이어그램의 아래쪽에 있는 구독자의 시간 표시줄이 여러 개인 것이 다르다. 
 
@@ -69,7 +69,9 @@ Subscriber #2 => 5
 
 BehaviorSubject는 구독자가 구독을 하면 가장 최근 값 혹은 기본값을 넘겨주는 클래스이다. 예를 들어 온도 센서에서 값을 받아온다면 가장 최근의 온도 값을 받아오는 동작을 구현할 수 있다. 또한 온도를 처음 얻을 때는 초기값을 반환하기도 한다.
 
-![BehaviorSubject](/Users/anminhee/Desktop/BehaviorSubject.png)
+<img width="756" alt="BehaviorSubject" src="https://user-images.githubusercontent.com/48676762/114408592-89b32580-9be4-11eb-8f50-f7840a8917e8.png">
+
+
 
 옵저버가 BehaviorSubject를 구독하기 시작하면 옵저버는 소스 Observable이 가장 최근에 발행한 항목(또는 아직 아무 값도 발행되지 않았다면 맨 처음 값이나 기본 값)의 발행을 시작하며 그 이후 소스 Observable에 의해 발행된 항목들을 계속 발행한다.
 
@@ -110,7 +112,7 @@ Subscriber #2 => 5
 
 구독자가 subscribe() 함수를 호출하면 값을 발행하기 시작한다. AsyncSubject 클래스처럼 마지막 값만 발행하거나 BehaviorSubject 클래스처럼 값이 없을 때 기본값을 밣애하지도 않는다. 오직 해당 시간에 발생한 데이터를 그대로 구독자에게 전달받는다.
 
-![PublishSubject](/Users/anminhee/Desktop/PublishSubject.png)
+<img width="743" alt="PublishSubject" src="https://user-images.githubusercontent.com/48676762/114408663-9b94c880-9be4-11eb-9174-e56ca8a451fe.png">
 
 
 
@@ -151,7 +153,7 @@ ReplaySubject 클래스는 구독자가 새로 생기면 항상 데이터의 처
 
 그러므로 모든 데이터 내용을 저장해두는 과정 중 메모리 누수가 발생할 가능성을 염두에 두고 사용할 때 주의해야 한다.
 
-![ReplaySubject](/Users/anminhee/Desktop/ReplaySubject.png)
+<img width="743" alt="ReplaySubject" src="https://user-images.githubusercontent.com/48676762/114408725-abaca800-9be4-11eb-92ad-0f5d3c4f5dd5.png">
 
 
 
