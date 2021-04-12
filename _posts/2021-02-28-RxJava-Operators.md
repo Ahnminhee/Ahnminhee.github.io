@@ -12,7 +12,7 @@ ReactiveX를 지원하는 언어 별 구현체들은 다양한 연산자들을 �
 
 #### Create 
 
-![create](/Users/anminhee/Desktop/image/create.png)
+<img width="768" alt="create" src="https://user-images.githubusercontent.com/48676762/114396413-831eb100-9bd8-11eb-8ee5-c7d852a66a7e.png">
 
 **직접적인 코드 구현을 통해 옵저버 메서드를 호출하여 Observable을 생성**
 
@@ -47,7 +47,7 @@ source.subscribe(System.out::println);
 
 #### Just
 
-![Just](/Users/anminhee/Desktop/image/Just.png)
+<img width="768" alt="Just" src="https://user-images.githubusercontent.com/48676762/114396656-bf521180-9bd8-11eb-9000-8d5934294e97.png">
 
 **객체 하나 또는 객채집합을 Observable로 변환한다. 변환된 Observable은 원본 객체들을 발행**
 
@@ -76,7 +76,7 @@ public class Ex {
 
 #### Map
 
-![Map](/Users/anminhee/Desktop/image/Map.png)
+<img width="749" alt="Map" src="https://user-images.githubusercontent.com/48676762/114396713-d09b1e00-9bd8-11eb-8422-555e96c3863a.png">
 
 **Observable이 배출한 항목에 함수를 적용**
 
@@ -101,7 +101,7 @@ source.subseribe(Log::i)
 
 #### FlatMap
 
-![flatMap](/Users/anminhee/Desktop/image/flatMap.png)
+<img width="746" alt="flatMap" src="https://user-images.githubusercontent.com/48676762/114396748-dc86e000-9bd8-11eb-9192-df8a0795d89e.png">
 
 **하나의 Observable이 발행하는 항목들을 여러개의 Observable로 변환하고, 항목들의 배출을 차례차례 줄 세워 하나의 Observable로 전달**
 
@@ -128,7 +128,7 @@ source.subscribe(Log::i)
 
 #### Filter
 
-![Filter](/Users/anminhee/Desktop/image/Filter.png)
+<img width="748" alt="Filter" src="https://user-images.githubusercontent.com/48676762/114396789-ec062900-9bd8-11eb-98c0-bea6e2ba1c57.png">
 
 **테스트 조건을 만족하는 항목들만 배출한다**
 
@@ -151,7 +151,7 @@ source.subscribe(System.out::println);
 
 #### Reduce
 
-![reduce](/Users/anminhee/Desktop/image/reduce.png)
+<img width="748" alt="reduce" src="https://user-images.githubusercontent.com/48676762/114396817-f6c0be00-9bd8-11eb-9bb5-a0c9acf43ee5.png">
 
 **Observable이 배출한 항목에 함수를 순서대로 적용하고 함수를 연산한 후 최종 결과를 발행한다**
 
@@ -176,7 +176,7 @@ source.subscribe(System.out::println);
 
 #### CombineLatest
 
-![combineLatest](/Users/anminhee/Desktop/image/combineLatest.png)
+<img width="748" alt="combineLatest" src="https://user-images.githubusercontent.com/48676762/114396852-02ac8000-9bd9-11eb-9d35-4636f6a01953.png">
 
 **두 개의 Observable 중 하나가 항목을 배출할 때 배출된 마지막 항목과 다른 한 Observable이 배출한 항목을 결합한 후 함수를 적용하여 실행 후 실행된 결과를 배출한다**
 
@@ -202,7 +202,7 @@ public static <T1, T2, R> Observable<R> combineLatest(
 
 #### Merge
 
-![merge](/Users/anminhee/Desktop/image/merge.png)
+<img width="748" alt="merge" src="https://user-images.githubusercontent.com/48676762/114396896-0f30d880-9bd9-11eb-83bb-956f87b2db82.png">
 
 **복수 개의 Observable들이 배출하는 항목들을 머지시켜 하나의 Observable로 만든다**
 
@@ -237,7 +237,7 @@ CommonUtils.sleep(1000);
 
 공식 문서에 들어가면 적절한 연산자를 사용할 수 있도록 도움을 주니 필요한 연산자가 있다면 들어가서 찾아보는 게 가장 좋은 방법인 것 같다.
 
-![OperatorsTree](/Users/anminhee/Desktop/image/OperatorsTree.png)
+<img width="773" alt="OperatorsTree" src="https://user-images.githubusercontent.com/48676762/114396927-19eb6d80-9bd9-11eb-8221-cd052d072e9d.png">
 
 
 
