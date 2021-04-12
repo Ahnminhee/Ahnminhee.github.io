@@ -29,9 +29,8 @@ categories: RxJava
 
 ---
 
+<img width="640" alt="schedulers" src="https://user-images.githubusercontent.com/48676762/114409757-bfa4d980-9be5-11eb-90b0-f4d70d96b862.png">
 
-
-![schedulers](/Users/anminhee/Desktop/result/Rx/schedulers.png)
 
 스케줄러의 핵심은 **제공되는 스케줄러의 종류를 선택한 후 subscribeOn() 과 observeOn() 함수를 호출**하는 것이다.
 
@@ -54,7 +53,7 @@ observeOn() 함수
 
 1. RxJava
 
-   ![스크린샷 2021-03-01 오후 11.05.07](/Users/anminhee/Desktop/result/Rx/스크린샷 2021-03-01 오후 11.05.07.png)
+<img width="811" alt="스크린샷 2021-03-01 오후 11 05 07" src="https://user-images.githubusercontent.com/48676762/114409794-c7647e00-9be5-11eb-9640-70c21d500ee8.png">
 
    1. 계산 스케줄러
 
